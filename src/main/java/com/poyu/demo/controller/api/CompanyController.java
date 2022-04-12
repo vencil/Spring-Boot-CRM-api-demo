@@ -9,6 +9,7 @@ import com.poyu.demo.util.Util;
 
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -23,6 +24,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
 @RequestMapping(value = "/api/company", produces = MediaType.APPLICATION_JSON_VALUE)
+@Validated
 public class CompanyController {
 
     @GetMapping("/{id}")
